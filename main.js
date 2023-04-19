@@ -1,11 +1,32 @@
+let objects = [
+{ one : "Василий", surname : "Васильев",},
 
+{ one : "Иван",    surname : "Иванов",},
 
-function compare (x, y, n,) {
-    let a = Math.floor((x % Math.floor(x)) * Math.pow(10, n));
-    let b = Math.floor((y % Math.floor(y)) * Math.pow(10, n));
-    console.log ( a == b);
+{ one : "Петр",    surname : "Петров",}
+]
+
+console.log (objects[1].surname);
+
+let searchObj = {};
+
+let a = 
+
+function search (obj, firstName, secondName) {
+    let obj = [];
+    for (i = 0 ; i <=obj.length ; i++) {
+
+        console.log(obj[i].one , obj[i].secondName);
+        // if ((obj[i].one === firstName) && (obj[i].surname === secondName)){
+        //     searchObj = obj[i];
+        // }
+        // else console.log("Asshanded")
+    }
 }
 
-compare (13.1234590, 2.123, 5); //ok
-compare(13.89044, 2.89143, 2); // ok
-compare(13.89044, 2.89143, 3); //ok
+
+search (objects , "Иван" , "Иванов");
+
+
+
+
